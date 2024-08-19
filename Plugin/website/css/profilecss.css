@@ -1,0 +1,158 @@
+.sidebar {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.sidebar ul {
+  font-size: 1.1em;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a {
+  display: block;
+  padding: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
+
+.main-content {
+  margin-left: 200px;
+}
+.material-icons {
+  vertical-align: middle;
+}
+.picture {
+  left: 420px;
+  position: relative;
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  border-radius: 50%;
+  overflow: hidden; /* Set the desired height */
+}
+
+.picture img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Make the image fill the width of the parent div */
+  height: 100%; /* Make the image fill the height of the parent div */
+  object-fit: cover; /* Optional: Maintain aspect ratio and cover the entire div */
+}
+hr {
+  left: 60%;
+  color: #c60;
+}
+.under-pic {
+  text-align: center;
+}
+.container2 {
+  display: flex;
+}
+.left {
+  width: 45%;
+  float: left;
+  min-height: 200px;
+  background-color: #c60;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.right {
+  width: 45%;
+  float: right;
+  min-height: 200px;
+  background-color: #c60;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-right: 35px;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#animation-container {
+  display: flex;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("../images/tm-bg-slide-1.jpg");
+  background-size: cover;
+  animation-name: imageAnimation;
+  animation-duration: 12s; /* Increase the duration for a slower and more relaxed animation */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes imageAnimation {
+  0% {
+    background-image: url("../images/tm-bg-slide-1.jpg");
+  }
+  33.33% {
+    background-image: url("../images/tm-bg-slide-2.jpg");
+  }
+  66.66% {
+    background-image: url("../images/tm-bg-slide-3.jpg");
+  }
+  100% {
+    background-image: url("../images/tm-bg-slide-1.jpg");
+  }
+}
+.inner {
+  margin-left: 30px;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+
+h2 {
+  padding-bottom: 14px;
+}
+.content-wrapper {
+  height: 100%;
+}
+.content {
+  white-space: normal;
+}
